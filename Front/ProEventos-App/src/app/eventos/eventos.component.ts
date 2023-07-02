@@ -1,5 +1,9 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { EventoService } from '../Services/evento.service';
+import { every } from 'rxjs';
+import { Evento } from '../Models/Evento';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-eventos',
@@ -32,9 +36,9 @@ export class EventosComponent implements OnInit{
     );
   }
 
-  constructor(private http: HttpClient) {}
+  constructor(private eventoService: EventoService, private modalService: BsModalService, private toastr: ToastrService) {}
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
     this.getEventos();
   }
 

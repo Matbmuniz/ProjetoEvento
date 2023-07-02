@@ -507,6 +507,9 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
+.angular/*
+.angular*
+/ .angular/cache
 /.angular/cache
 .sass-cache/
 /connect.lock
