@@ -4,8 +4,8 @@ import { every } from 'rxjs';
 import { NgxSpinnerService } from "ngx-spinner";
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { ToastrService } from 'ngx-toastr';
-import { Evento } from 'src/app/Models/Evento';
-import { EventoService } from 'src/app/Services/evento.service';
+import { Evento } from '@app/Models/Evento';
+import { EventoService } from '@app/Services/evento.service';
 import { Router } from '@angular/router';
 
 @Component({
